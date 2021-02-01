@@ -1,0 +1,64 @@
+{
+  "name": "dashboard-layout",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.1.0",
+    "@types/lodash": "^4.14.168",
+    "@voomsway/react-table": "^1.0.0-beta.40",
+    "antd": "^4.11.2",
+    "cra-template-typescript": "1.1.1",
+    "craco-less": "^1.17.1",
+    "framer-motion": "^3.2.2-rc.1",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "lodash": "^4.17.20",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-scripts": "4.0.1",
+    "remixicon": "^2.5.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.22",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "typescript": "^4.1.3"
+  }
+}

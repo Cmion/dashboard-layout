@@ -1,0 +1,37 @@
+.UserMenu__Popover {
+  .ant-popover-inner-content {
+    padding: 0 !important;
+    border: 1.3px solid var(--border-color-split);
+    border-radius: 5px;
+  }
+}
+.UserMenu__Content {
+  width: 350px;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  padding: 20px 0 0 0;
+
+  .UserMenu__Avatar__Large {
+    color: var(  --trip-pink);
+    background-color: var(--trip-pink-light);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .UserMenu__Selectable {
+    padding-bottom: 10px;
+    .UserMenu__Selectable__Text {
+      cursor: pointer;
+    }
+    &:hover {
+      .anticon,
+      .UserMenu__Selectable__Text {
+        color: var(--accent);
+        transition: color 0.25s var(--transition);
+      }
+    }
+  }
+}

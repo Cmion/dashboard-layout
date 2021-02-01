@@ -1,0 +1,48 @@
+.Layout {
+  #Layout-sider {
+    flex: 0 0 300px !important;
+    max-width: 300px !important;
+    min-width: 300px !important;
+    width: 300px;
+    border-right: 1px solid var(--border);
+  }
+  .Sider-header {
+    height: 64px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-size: var(--fs-20);
+      font-weight: 600;
+    }
+  }
+  .Sider-message {
+    padding: 10px 20px;
+    margin: 20px 0;
+    display: flex;
+    flex-flow: column;
+    span {
+      line-height: 1.5rem;
+    }
+  }
+  .Layout-header {
+    background: var(--background-primary);
+    display: flex;
+    flex-flow: row;
+    left: 300px;
+    padding: 0 20px 0 0 !important;
+    z-index: 200;
+    width: calc(100% - 300px) !important;
+    border-bottom: 1px solid var(--border);
+    justify-content: space-between;
+    .logo {
+      max-width: 300px !important;
+      min-width: 300px !important;
+      width: 300px;
+      padding: 0 20px;
+      font-weight: 600;
+      font-size: var(--fs-25);
+    }
+  }
+}
